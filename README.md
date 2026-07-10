@@ -49,6 +49,7 @@ Torque = 7.35 × 0.031 = 0.228 N.m
 
 The preliminary required torque per joint is 0.228 N.m, which falls within the appropriate range for small servo motors used in robots of this size to ensure balance and movement capability.
 
+```ccp
 
 void walkForward() {
   // Simple gait pattern
@@ -57,6 +58,8 @@ void walkForward() {
   leg2.write(120); leg4.write(120); 
   delay(500);
 }
+
+```
 
 Potential Mechanical Issues:
 
