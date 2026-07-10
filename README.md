@@ -29,3 +29,22 @@ Where:
 Core Objective
 
 The target is not to build an ultra-advanced robotic system, but to thoroughly comprehend and implement the foundational mechanical physics that empower a robot to successfully execute stand and walk routines.
+
+
+
+### Preliminary Torque Calculation
+
+To calculate the preliminary torque required for the motors, a worst-case scenario was assumed where the robot's leg is fully extended horizontally, based on the actual design dimensions in Tinkercad.
+
+**Formula Used:**
+Torque = Force × Leg Length
+
+**Actual Calculation Data:**
+- Assumed Robot Mass: 1.5 kg
+- Force acting on a single joint (assuming the load is distributed over two legs during walking): 7.35 N
+- Actual Leg Length from the design: 0.031 m
+
+**Substitution and Result:**
+Torque = 7.35 × 0.031 = 0.228 N.m
+
+The preliminary required torque per joint is 0.228 N.m, which falls within the appropriate range for small servo motors used in robots of this size to ensure balance and movement capability.
