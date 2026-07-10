@@ -48,3 +48,20 @@ Torque = Force × Leg Length
 Torque = 7.35 × 0.031 = 0.228 N.m
 
 The preliminary required torque per joint is 0.228 N.m, which falls within the appropriate range for small servo motors used in robots of this size to ensure balance and movement capability.
+
+
+void walkForward() {
+  // Simple gait pattern
+  leg1.write(90); leg3.write(90); 
+  delay(500);
+  leg2.write(120); leg4.write(120); 
+  delay(500);
+}
+
+Potential Mechanical Issues:
+
+1. Center of Gravity: Instability caused by unbalanced weight distribution.
+2. Torque Limitations: Servo motors failing to support the robot's total weight.
+3. Friction Issues: Foot slippage on smooth surfaces due to lack of traction.
+4. Mechanical Backlash: Gear slop in servos causing inaccurate leg positioning.
+5. Power Instability: Voltage drops during motor movement triggering system resets.
